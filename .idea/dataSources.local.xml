@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails home_depot: test" uuid="8811988e-6e63-41fb-b4a5-dffacb3ff323">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="home_depot: development" uuid="430cf8c9-2631-42e3-8c05-6d09923adb84">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="Rails home_depot: production" uuid="0abd1d07-667a-428e-87e6-8d095328e0a9">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>home_depot</user-name>
+    </data-source>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HomeDepot</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<!--limit the css loading to controller-specific rules-->
+<body class="<%= controller.controller_name %>">
+
+<%= yield %>
+
+</body>
+</html>
