@@ -1,6 +1,8 @@
 require 'rails_helper'
+require 'spec_helper'
 
 RSpec.describe Product, type: :model do
+  fixtures :products
   context 'with empty attributes' do
     subject { described_class.new }
     it 'should not be valid' do
@@ -60,6 +62,18 @@ RSpec.describe Product, type: :model do
         @product.image_url = url
         expect(@product).to_not be_valid
       end
+    end
+  end
+  context 'without a unique title' do
+    it 'should not be valid' do
+      product = Product.new(
+        title: products(:ruby).title,
+        description: 'yyy',
+        price: 1,
+        image_url: 'fred.gif'
+      )
+      expect(product.save).to be(false)
+      expect(product.errors[:title].join('; ')).to eq('has already been taken')
     end
   end
 end
