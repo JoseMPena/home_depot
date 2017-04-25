@@ -15,5 +15,13 @@
       <first-sync>true</first-sync>
       <user-name>home_depot</user-name>
     </data-source>
+    <data-source name="Rails home_depot: development" uuid="d448301e-1d74-4126-9d93-335c1abf84d1">
+      <database-info product="PostgreSQL" version="9.5.6" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>root</user-name>
+      <introspection-schemas>home_depot_development:public</introspection-schemas>
+    </data-source>
   </component>
 </project>
