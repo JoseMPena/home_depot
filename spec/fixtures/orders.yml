@@ -1,0 +1,11 @@
+one:
+  name: Jose Peña
+  address: MyText
+  email: jose@example.org
+  pay_type: Credit Card
+  
+two:
+  name: MyString
+  address: MyText
+  email: MyString
+  pay_type: MyString

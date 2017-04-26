@@ -1,0 +1,7 @@
+one:
+  product: product
+  order: order
+  
+two:
+  product: another
+  order: two
