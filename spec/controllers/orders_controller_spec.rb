@@ -36,7 +36,7 @@ RSpec.describe OrdersController, type: :controller do
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
   # OrdersController. Be sure to keep this updated too.
-  let(:valid_session) { {} }
+  let(:valid_session) { session[:user_id] }
 
   describe "GET #index" do
     it "assigns all orders as @orders" do
