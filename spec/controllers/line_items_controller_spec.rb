@@ -23,13 +23,13 @@ RSpec.describe LineItemsController, type: :controller do
   describe 'POST #create' do
     render_views
     it 'creates line item' do
-      expect { post :create, product_id: products(:ruby).id }
+      expect { post :create, params: { product_id: products(:ruby).id } }
         .to change { LineItem.count }.by(1)
       expect(response).to redirect_to store_path
     end
 
     it 'creates a line_item via ajax' do
-      expect { xhr :post, :create, product_id: products(:ruby).id }
+      expect { xhr :post, :create, params: {product_id: products(:ruby).id} }
         .to change { LineItem.count }.by(1)
       expect(response).to have_http_status :success
     end
